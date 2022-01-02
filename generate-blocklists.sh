@@ -33,6 +33,7 @@ sed -i "/$_IP/d" $_BLOCKLIST
 }
 
 # Generate MikroTik RSC
+# TODO: Use the Mikrotik API instead, but eh, this works fine if we have multiple devices downloading the list
 _genMikroTik () {
  _TMPRSC="/tmp/cs-block.rsc"
  _RAW=$_BLOCKLIST
